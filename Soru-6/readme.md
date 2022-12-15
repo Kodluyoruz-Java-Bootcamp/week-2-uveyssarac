@@ -18,10 +18,10 @@
 Bu servis, "hello" yolu altında bulunan "/{name}" yolunu dinleyecek ve bu yola bir isim ekleyerek erişildiğinde, "Hello, [isim]" şeklinde bir cevap döndürecektir. Örneğin, "/hello/John" yoluna erişildiğinde, servis "Hello, John" cevabını döndürecektir. Bu örnek, Java dilini kullanarak bir RESTful servisin nasıl oluşturulacağını göstermektedir.
 
 
-* **Http Metotlar**
-GET: Web sunucusundaki bir veriyi istemciye göndermek için kullanılır. Örneğin, bir web sitesindeki bir sayfa içeriğini istemciye göstermek için kullanılır.
-POST: Web sunucusuna bir veri göndermek için kullanılır. Örneğin, bir web formu doldurup gönderirken kullanılır.
-PUT: Web sunucusundaki bir veriyi güncellemek için kullanılır. Örneğin, bir veritabanındaki bir kaydı güncellemek için kullanılır.
-DELETE: Web sunucusundaki bir veriyi silmek için kullanılır. Örneğin, bir veritabanındaki bir kaydı silmek için kullanılır.
-HEAD: Web sunucusundaki bir verinin özelliklerini sorgulamak için kullanılır. Örneğin, bir dosyanın boyutunu ve tarihini sorgulamak için kullanılır.
+- **Http Metotlar**
+     - GET: Web sunucusundaki bir veriyi istemciye göndermek için kullanılır. Örneğin, bir web sitesindeki bir sayfa içeriğini istemciye göstermek için kullanılır.
+     - POST: Web sunucusuna bir veri göndermek için kullanılır. Örneğin, bir web formu doldurup gönderirken kullanılır.
+     - PUT: Web sunucusundaki bir veriyi güncellemek için kullanılır. Örneğin, bir veritabanındaki bir kaydı güncellemek için kullanılır.
+     - DELETE: Web sunucusundaki bir veriyi silmek için kullanılır. Örneğin, bir veritabanındaki bir kaydı silmek için kullanılır.
+     - HEAD: Web sunucusundaki bir verinin özelliklerini sorgulamak için kullanılır. Örneğin, bir dosyanın boyutunu ve tarihini sorgulamak için kullanılır.
 
