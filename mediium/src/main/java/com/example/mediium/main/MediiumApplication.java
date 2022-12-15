@@ -33,7 +33,8 @@ public class MediiumApplication {
         writingService.createWriting((writing1));
         writingService.createWriting((writing1));
 
-        //userService.printAll();
+        userService.printAll();
+        System.out.println("-----------------------------------------");
         writingService.printAll();
 
 
