@@ -6,13 +6,14 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class UserDao {
-   private static List<User> userList=new ArrayList<User>();
+    private static List<User> userList = new ArrayList<User>();
 
-   public void createUser(User user){
-       userList.add(user);
-   }
-   public List<User> findAllUsers(){
-       return userList;
-   }
+    public void createUser(User user) {
+        userList.add(user);
+    }
+
+    public List<User> findAllUsers() {
+        return userList;
+    }
 
 }

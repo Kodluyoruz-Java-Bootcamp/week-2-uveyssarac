@@ -8,12 +8,11 @@ import org.springframework.context.annotation.Configuration;
 @Configuration
 
 public class BeanConfig {
-	
-	@Bean
-	public UserService userService() {
-		return new UserService();
-	}
-	
-	
+
+    @Bean
+    public UserService userService() {
+        return new UserService();
+    }
+
 
 }

@@ -6,12 +6,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class WritingDao {
-    private static List<Writing> writingList=new ArrayList<Writing>();
+    private static List<Writing> writingList = new ArrayList<Writing>();
 
-    public void createWriting(Writing writing){
+    public void createWriting(Writing writing) {
         writingList.add(writing);
     }
-    public List<Writing> findAllWritings(){
+
+    public List<Writing> findAllWritings() {
         return writingList;
     }
 }

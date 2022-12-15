@@ -1,5 +1,5 @@
-public class MiNote10 implements Telefon{
-    private String model="Mi Note 10";
+public class MiNote10 implements Telefon {
+    private String model = "Mi Note 10";
 
     public String getModel() {
         return model;

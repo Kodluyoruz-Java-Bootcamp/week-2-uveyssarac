@@ -6,10 +6,11 @@ import java.util.List;
 public class Writing {
     private String title;
     private String content;
-    private List<String>tag;//Yazının tagleri
+    private List<String> tag;//Yazının tagleri
     private User user;//Yazıyı yazan kullanıcı
     private int likes;//Aldığı like sayısı
     private LocalDate date;//Yazının yazılma tarihi
+
     public Writing(String title, String content, List<String> tag, User user, LocalDate date) {
         this.title = title;
         this.content = content;
@@ -57,6 +58,7 @@ public class Writing {
     public void setLikes(int likes) {
         this.likes = likes;
     }
+
     public LocalDate getDate() {
         return date;
     }

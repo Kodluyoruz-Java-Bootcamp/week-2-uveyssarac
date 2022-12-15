@@ -13,15 +13,15 @@ public class User {
     private List<User> followers;//Kullanıcıyı takip eden userlar
     private List<User> followingUsers;//Takip ettiği userlar
     private List<String> followingTag;//Takip ettiği tagler
-    private List<Writing>readingLists;//Kullanıcının okuma listeleri
-    private List<Writing>myWritings;// Kullanıcının yazdığı yazılar
+    private List<Writing> readingLists;//Kullanıcının okuma listeleri
+    private List<Writing> myWritings;// Kullanıcının yazdığı yazılar
 
     public User(int userId, String mail, String password, String name) {
         this.userId = userId;
         this.mail = mail;
         this.password = password;
         this.name = name;
-        this.createdDate=LocalDate.now();
+        this.createdDate = LocalDate.now();
     }
 
     public int getUserId() {
@@ -71,9 +71,14 @@ public class User {
     public void setName(String name) {
         this.name = name;
     }
-    public LocalDate getCreatedDate() {return createdDate;}
 
-    public void setCreatedDate(LocalDate createdDate) {this.createdDate = createdDate;}
+    public LocalDate getCreatedDate() {
+        return createdDate;
+    }
+
+    public void setCreatedDate(LocalDate createdDate) {
+        this.createdDate = createdDate;
+    }
 
     public String getAboutMe() {
         return aboutMe;

@@ -21,9 +21,9 @@ public class Main {
 
         ApplicationContext applicationContext = new AnnotationConfigApplicationContext(BeanConfig.class);
 
-        ArrayList<Realty>pelinRealtyList=new ArrayList<>();
-        ArrayList<Realty>samiRealtyList=new ArrayList<>();
-        User userPelin = new User("Pelin", "mimar.pelin@gmail.com", "Pelin123",UserType.INDIVIDUAL, pelinRealtyList);
+        ArrayList<Realty> pelinRealtyList = new ArrayList<>();
+        ArrayList<Realty> samiRealtyList = new ArrayList<>();
+        User userPelin = new User("Pelin", "mimar.pelin@gmail.com", "Pelin123", UserType.INDIVIDUAL, pelinRealtyList);
         User userSami = new User("Sami", "sami@gmail.com", "123", UserType.INDIVIDUAL, samiRealtyList);
         userPelin.setType(UserType.INDIVIDUAL);
         /*
@@ -181,10 +181,10 @@ public class Main {
 
         //Şehir ve ilçe bazlı ilan arama.
         System.out.println("---------------- İstanbul Taksim'deki ilanlar ---------------- ");
-        realtyService.getAllByProvinceDistrict("İstanbul","Beşiktaş");
+        realtyService.getAllByProvinceDistrict("İstanbul", "Beşiktaş");
 
         System.out.println("---------------- İstanbul Beşiktaş'taki ilanlar ---------------- ");
-        realtyService.getAllByProvinceDistrict("İstanbul","Taksim");
+        realtyService.getAllByProvinceDistrict("İstanbul", "Taksim");
 
 
         //Kullanıcı yaptığı aramaları kaydedebilmeli, listeleyebilmeli.
@@ -197,7 +197,7 @@ public class Main {
         List<String> search2 = new ArrayList<>();
         search2.add("İstanbul");
 
-        List<List<String>> searchList= new ArrayList<>();
+        List<List<String>> searchList = new ArrayList<>();
         searchList.add(search1);
         searchList.add(search2);
         userSami.setSearchList(searchList);
@@ -206,11 +206,9 @@ public class Main {
         System.out.println(userService.publishedRealtyNumber(userPelin));
 
 
-
         //Şehir Vitrini
         System.out.println("----------------  ŞEHİR VİTRİNİ ---------------- ");
         realtyService.createSehirVitrini();
-
 
 
         // Bir kullanıcının bütün ilanlarını listele
@@ -222,7 +220,7 @@ public class Main {
 
         System.out.println("---------------- İstanbul, Ankara, İzmir şehirlerindeki ilanlarının sayısı  ---------------- ");
 
-        System.out.println(realtyService.getNumberByProvince(List.of("istanbul","izmir","ankara")));
+        System.out.println(realtyService.getNumberByProvince(List.of("istanbul", "izmir", "ankara")));
 
 
 
