@@ -25,7 +25,7 @@ public class RealtyService {
 		if (UserType.INDIVIDUAL.equals(realty.getUser().getType()) ) {
 			// en fazla 3 ilan girebilir.
 			// Userservice'teki kullanıcıya ait active ilan sayısını bulup kontorlü sağlıyoruz.
-			if(userService.publishedRealtyNumber(realty.getUser())>3){
+			if(userService.publishedRealtyNumber(realty.getUser())>=3){
 				System.out.println("Bireysel kullanıclar en fazla 3 ilan yayınlayabilir.. (İlanın durumu Pasif olarak değiştirildi.)");
 				realty.setStatus(RealtyType.PASSIVE);
 				realtyDao.saveRealty(realty);
