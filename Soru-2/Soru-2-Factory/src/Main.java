@@ -11,8 +11,7 @@ public class Main {
         Telefon tel2= fabrika.telefonUret("mi8");
         tel2.setModel("mi5");
         System.out.println(tel2);
-
-
+        
         Telefon tel3= fabrika.telefonUret("minote10");
         tel3.setModel("minote2");
         System.out.println(tel3);
