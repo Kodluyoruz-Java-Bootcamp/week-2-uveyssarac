@@ -1,3 +1,4 @@
+## Singleton Design Pattern
 - Singleton design pattern ile sadece bir nesne oluşur.
 - Sınıf içindeki static değerler sınıfa aittir.
 - Örnekte görüldüğü üzere iki kere nesne oluşturulmuştur fakat, sınıf içinde oluşturduğumuz static Singleton nesnesi tek sefer çalışır 
