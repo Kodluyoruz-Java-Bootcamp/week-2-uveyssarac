@@ -1,3 +1,5 @@
+## Factory Design Pattern
+
 - Factory design pattern'de nesnelerin kendi sınıflarından değilde bir fabrikası varmışta ordan üretiliyormuş gibi üretilmesi sağlanır. Bu şekilde üretilmesinin avantajı sürekli new keydordu ile üretmek zorunda kalmamamız. 
 Ve oluşturduğumuz interface ile direkt nesneyi o intereface üzerinden return edebilmemiz.
 - Dezavantaj olarak ise eğer çok fazla modelimiz olduğunu düşünürsek MiFabrika sınıfında çok fazla if bloğu gerekecektir.
