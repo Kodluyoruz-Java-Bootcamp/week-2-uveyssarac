@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/mediium/mediium.iml" filepath="$PROJECT_DIR$/mediium/mediium.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/week-2-uveyssarac.iml" filepath="$PROJECT_DIR$/.idea/week-2-uveyssarac.iml" />
     </modules>
   </component>
