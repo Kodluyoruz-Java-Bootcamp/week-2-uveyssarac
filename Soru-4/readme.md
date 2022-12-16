@@ -1,0 +1,57 @@
+## Java dünyasındaki framework’ler ve çözdükleri problemler nedir? Kod Örneklendirini de içermelidir.
+
+### Spring
+
+Spring framework ile bir uygulamada kullanılan nesneleri yönetmek, veritabanı bağlantılarını kurmak ve yönetmek, web
+servisleri oluşturmak ve kullanmak gibi birçok işlem daha kolay şekilde yapılabilir. Spring framework ayrıca, kodunuzu
+daha okunaklı ve anlaşılır hale getirmek için birçok farklı desenleri (design patterns) kullanır ve bu sayede geliştirme
+sürecinizi hızlandırabilir .
+
+      @Service
+      public class MyService {
+          @Autowired
+          private MyRepository myRepository;
+
+          public void doSomething() {
+              // Servisin yapacağı işlemler burada yer alacak.
+          }
+      }
+
+Bu kod parçasında, @Service anotasyonu ile bir servis sınıfı oluşturulmuş ve doSomething() adlı bir işlev
+tanımlanmıştır. Bu işlev içerisinde servisin yapacağı işlemler yer alacaktır. Ayrıca, @Autowired anotasyonu ile bir
+repository nesnesi otomatik olarak inject edilmiştir. Bu sayede repository sınıfındaki metodlara servis sınıfı
+içerisinden kolayca erişilebilir.
+
+### Hibernate
+
+Hibernate Java’da bir ORM kütüphanesidir. Hibernate, veritabanındaki verileri Java nesnelerine dönüştürür ve bu
+nesneleri veritabanına kaydetmek veya veritabanından okumak için kullanılabilir. Bu sayede, Java uygulamaları
+geliştiricileri veritabanına erişmek için SQL kodu yazmak zorunda kalmazlar. Bu, veritabanına erişim işlemini daha kolay
+ve düzenli hale getirir.
+
+      // Hibernate SessionFactory object
+      SessionFactory sessionFactory = new Configuration().configure().buildSessionFactory();
+
+      // Hibernate Session object
+      Session session = sessionFactory.openSession();
+
+      // Hibernate Transaction object
+      Transaction transaction = session.beginTransaction();
+
+      // Create an object to save
+      Employee employee = new Employee();
+      employee.setFirstName("John");
+      employee.setLastName("Doe");
+
+      // Save the object
+      session.save(employee);
+
+      // Commit the transaction
+      transaction.commit();
+
+      // Close the session
+      session.close();
+
+Bu örnekte, Hibernate konfigürasyonu yüklenir ve bir SessionFactory nesnesi oluşturulur. Daha sonra, bir Session nesnesi
+açılır ve bir Transaction başlatılır. Bu Transaction içerisinde, bir Employee nesnesi oluşturulur ve veritabanına
+kaydedilir. Transaction tamamlandıktan sonra, Session kapatılır.

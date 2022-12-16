@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/Soru-2/Soru-2.iml" filepath="$PROJECT_DIR$/Soru-2/Soru-2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Soru-2/Soru-2-Factory/Soru-2-Factory.iml" filepath="$PROJECT_DIR$/Soru-2/Soru-2-Factory/Soru-2-Factory.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Soru-2/Soru-2-Singleton/Soru-2-Singleton.iml" filepath="$PROJECT_DIR$/Soru-2/Soru-2-Singleton/Soru-2-Singleton.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/week-2-uveyssarac.iml" filepath="$PROJECT_DIR$/.idea/week-2-uveyssarac.iml" />
+    </modules>
+  </component>
+</project>

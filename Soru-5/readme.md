@@ -1,0 +1,20 @@
+## Spring frameworkünün kullandığı design patternlar neler?
+
+### 1. Singleton pattern
+
+Bir sınıftan sadece bir adet nesne oluşturmak istediğimizde kullanılır.
+
+### 2. Factory Method pattern
+
+Farklı nesneleri üreten fabrika olarak düşünebiliriz. Örneğin telefon nesnesi düşünelim. Samsung telefon modellerinden
+s10 ve note10 üreteceğiz. Her iki model için birer sınıf tanımı yapılır. Fakat telefonlar bu sınıflar içinde üretilmez .
+Bu telefonların üretimi için bir fabrika sınıfı oluştururuz. Ve istenen telefon modeline göre fabrika sınıfı içerisinde
+üretim yapılır.
+
+### 3. Proxy pattern
+
+Proxy pattern fazla yük gereken işlemlerde kullanılır. Örneğin Youtube’da bir video izlerken, o videonun tamamının
+indirilmesini bekleyemeyiz. Arka tarafta Proxy pattern oluşturularak parça parça inidirilir ve tüm videonun
+indirilmesini beklemeden videoyu izliyor oluruz.
+
+### 4. Template pattern
